@@ -7,7 +7,6 @@
     <meta name="author" content="Andres M Bran">
     <title>b-12</title>
     <style>
-        /* Basic inline styles for demonstration */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -38,12 +37,12 @@
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
+            overflow: hidden; 
             padding: 20px;
             background-color: #000000;
             color: #00ff3c;
         }
-        footer {
+        footer { 
             text-align: center;
             padding: 1rem;
             background-color: #333;
@@ -51,6 +50,33 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        pre {
+            overflow-x: auto; 
+            white-space: pre; 
+            font-size: 1em;   
+            color: #00ff3c;   
+        }
+
+        @media (max-width: 768px) { /* Targets tablets and larger phones */
+            .container {
+                width: 95%; /* Make the container use more screen width */
+            }
+            pre {
+                font-size: 0.7em; /* Reduce font size of ASCII art. Adjust value as needed. */
+                                  /* Example: If base font is 16px, this is ~11.2px */
+                                  /* Alternative: You could try viewport units like font-size: 1.8vw; */
+                                  /* but this requires more tuning. */
+            }
+        }
+
+        @media (max-width: 480px) { /* Targets smaller mobile phones */
+            pre {
+                font-size: 0.5em; /* Further reduce font size for very small screens */
+                                  /* Example: If base font is 16px, this is 8px */
+                                  /* Alternative: font-size: 2.5vw; (tune this value) */
+            }
         }
     </style>
 </head>
@@ -61,9 +87,9 @@
     <div class="container">
         <main>
             <article>
-		<pre>
+        <pre>
 
-               /^\/^\         ▗▖             █ ▄▄▄▄    ▗▄▖ ▗▄▄▄▖                                    
+               /^\/^\         ▗▖             ▄ ▄▄▄▄    ▗▄▖ ▗▄▄▄▖                                    
              _|__|  O|        ▐▌             █    █   ▐▌ ▐▌  █                        
       \/     /~     \_/ \     ▐▛▀▚▖  █████   █ █▀▀▀   ▐▛▀▜▌  █                        
        \____|__________/  \   ▐▙▄▞▘          █ █▄▄▄ ▄ ▐▌ ▐▌▗▄█▄▖  
@@ -83,7 +109,7 @@
                      ~--______-~                ~-___-~
        
 
-		</pre>
+        </pre>
 
         <h3>Who are we?</h3>
         <p>At b-12 we are building AI agents to facilitate the use of automated labs</p>
@@ -103,4 +129,3 @@
     <!-- <script src="script.js"></script> -->
 </body>
 </html>
-
