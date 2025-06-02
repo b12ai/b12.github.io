@@ -1,0 +1,88 @@
+:root {
+  --bg: #171717;
+  --container-bg: #0b001b;
+  --text: #e5e5e5;
+  --accent: #53ebe4;
+  --primary: #eca6c0;
+  --link: #c1115a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--container-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+article > pre {
+  font-family: 'Courier New', monospace;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+h3 {
+  color: var(--primary);
+  margin-top: 1.5rem;
+}
+
+p,
+ul {
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: inside disc;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.team-profile {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  article > pre {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  article > pre {
+    font-size: 0.6rem;
+  }
+}

@@ -6,92 +6,13 @@
     <meta name="description" content="b-12 landing">
     <meta name="author" content="Andres M Bran">
     <title>b-12</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #171717;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden; 
-            padding: 20px;
-            background-color: #0b001b;
-            color: #53ebe4 ;
-        }
-        footer { 
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        pre {
-            /* overflow-x: auto;  */
-            white-space: pre; 
-            font-size: 1em;   
-            color: #53ebe4 ;   
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: #eca6c0;
-        }
-        a {
-            color: #c1115a ; /* A pleasant, readable light blue */
-            text-decoration: none; /* Removes the default underline, if desired */
-        }
-
-        @media (max-width: 768px) { /* Targets tablets and larger phones */
-            .container {
-                width: 95%; /* Make the container use more screen width */
-            }
-            pre {
-                font-size: 0.7em; /* Reduce font size of ASCII art. Adjust value as needed. */
-                                  /* Example: If base font is 16px, this is ~11.2px */
-                                  /* Alternative: You could try viewport units like font-size: 1.8vw; */
-                                  /* but this requires more tuning. */
-            }
-        }
-
-        @media (max-width: 480px) { /* Targets smaller mobile phones */
-            pre {
-                font-size: 0.6em; /* Further reduce font size for very small screens */
-                                  /* Example: If base font is 16px, this is 8px */
-                                  /* Alternative: font-size: 2.5vw; (tune this value) */
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0b001b">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <header>
-        <h1>b-12</h1>
-    </header> -->
     <div class="container">
         <main>
             <article>
@@ -150,14 +71,14 @@
             b-12 is driven by a dedicated team passionate about advancing scientific discovery through intelligent automation.
             We combine expertise in AI, Chemistry and Automation to build tools that empower researchers.
         </p>
-        <div style="margin-bottom: 1em;">
+        <div class="team-profile">
             <p>
                <strong><a href="https://www.linkedin.com/in/andrescmb/">Andres M Bran</a></strong><br>
                <em>Co-founder and CTO. Andres leads the AI development at b-12.</em><br>
                <a href="mailto:andres@b12labs.ai">andres@b12labs.ai</a><br>
             </p>
         </div>
-        <div>
+        <div class="team-profile">
             <p>
                <strong><a href="https://www.linkedin.com/in/zlatkojoncev/">Zlatko Jončev</a></strong><br>
                <em>Co-founder and CEO. Zlatko leads product development and evaluation.</em><br>
@@ -175,21 +96,10 @@
             
             We'd love to hear about your challenges and explore how we can help.
         </p>
-        <!-- You might want a more prominent button-like CTA here later with some CSS styling -->
-        <!-- Example:
-        <p style="text-align:center; margin-top:20px;">
-            <a href="mailto:info@b12labs.ai?subject=Inquiry about b-12 AI Agents" style="background-color: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">Request a Demo</a>
-        </p>
-        -->
     
     </article>
 </main>
 </div>
-        <!-- </article>
-        </main>
-    </div> -->
 
-    <!-- You can link to external JavaScript files here -->
-    <!-- <script src="script.js"></script> -->
 </body>
 </html>
