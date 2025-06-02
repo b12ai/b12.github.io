@@ -1,10 +1,10 @@
 :root {
-  --bg: #171717;
-  --container-bg: #0b001b;
-  --text: #e5e5e5;
-  --accent: #53ebe4;
-  --primary: #eca6c0;
-  --link: #c1115a;
+  --bg: #0d0d1a;
+  --container-bg: #1a1a2e;
+  --text: #d9d9d9;
+  --primary: #ff6f00;
+  --accent: #08f7fe;
+  --link: #08f7fe;
 }
 
 * {
