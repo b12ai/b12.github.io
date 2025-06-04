@@ -143,9 +143,17 @@ header {
 
 
 body {
+  background-image: url('b12mol.png');
+  background-repeat: no-repeat;
+  background-position: left center; /* left, right with 40px margin */
+  background-attachment: fixed;
+  background-size: auto 80vh;
+}
+/* 
+body {
   background-image: url('b12mol.png'), url('b12logo.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: left center, calc(100% - 40px) center; /* left, right with 40px margin */
+  background-position: left center, calc(100% - 40px) center; 
   background-attachment: fixed, fixed;
   background-size: auto 80vh, auto 60vh;
-}
+} */
