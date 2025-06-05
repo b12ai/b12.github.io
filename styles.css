@@ -149,11 +149,33 @@ body {
   background-attachment: fixed;
   background-size: auto 80vh;
 }
-/* 
-body {
-  background-image: url('b12mol.png'), url('b12logo.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: left center, calc(100% - 40px) center; 
-  background-attachment: fixed, fixed;
-  background-size: auto 80vh, auto 60vh;
-} */
+
+#bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.8) blur(1px); /* darken and soften the video */
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: rgba(13,13,26,0.6); /* semi-transparent overlay */
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay, .nav-container, main article {
+  opacity: 0;
+  animation: fadeIn 1.5s ease 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}

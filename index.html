@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="b-12 landing">
-    <meta name="author" content="Andres M Bran">
-    <title>b-12</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#0d0d1a">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="b-12 landing">
+  <meta name="author" content="Andres M Bran">
+  <title>b-12</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0d0d1a">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <video autoplay muted loop id="bg-video">
+    <source src="b12.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
     <header>
       <div class="nav-container">
         <a href="#about" class="nav-button">About</a>
@@ -20,8 +25,9 @@
       </div>
     </header>
     <div class="container">
-        <main>
-            <article>
+      <main>
+        <article>
+
                 <h3 id="about">Who are we?</h3>
                 <p>
                     At b-12 we are building AI agents to facilitate the use of automated labs.<br>
@@ -48,9 +54,10 @@
                     <li><strong>Focus on Science, Not Software:</strong> <em>Our intuitive AI lets you concentrate on your scientific questions, not on programming complex machinery.</em></li>
                 </ul>
 
-            </article>
-</main>
-</div>
-
+          <!-- Your content here (as before) -->
+        </article>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
