@@ -63,6 +63,14 @@ h3 {
   scroll-margin-top: 80px;
 }
 
+.hero-title {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary);
+}
+
 p,
 ul {
   line-height: 1.6;
@@ -123,6 +131,22 @@ html {
   margin: 0 auto;
 }
 
+/* Vertical infographic scroll-snap */
+.infographic {
+  background-image: url('infogr.png');
+  background-repeat: no-repeat;
+  background-size: auto 300vh;
+}
+.infographic.top {
+  background-position: center top;
+}
+.infographic.mid {
+  background-position: center center;
+}
+.infographic.bottom {
+  background-position: center bottom;
+}
+
 /* Navigation header styles */
 header {
   background-color: var(--container-bg);
@@ -155,13 +179,13 @@ header {
 }
 
 
-body {
+/* body {
   background-image: url('b12mol.png');
   background-repeat: no-repeat;
-  background-position: left center; /* left, right with 40px margin */
+  background-position: left center; 
   background-attachment: fixed;
   background-size: auto 80vh;
-}
+} */
 
 #bg-video {
   position: fixed;
