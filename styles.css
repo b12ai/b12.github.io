@@ -108,6 +108,19 @@ a:hover {
 /* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snap-section .container {
+  margin: 0 auto;
 }
 
 /* Navigation header styles */
@@ -159,7 +172,7 @@ body {
   height: auto;
   z-index: 0;
   object-fit: cover;
-  filter: brightness(0.8) blur(1px); /* darken and soften the video */
+  filter: brightness(0.9)
 }
 
 .overlay {
